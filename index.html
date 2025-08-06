@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- New Fixed Nav Bar -->
+    <div class="fixed-nav">
+        <div class="fixed-nav-content">
+            <a href="#home" class="fixed-nav-logo"> &lt;create&gt;</a>
+            
+           
+             <!-- ✅ Right: Mobile Toggle (hamburger menu) -->
+             <ul class="fixed-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            
+            <!-- Add this where you want the toggle to appear in the fixed-nav-content -->
+            <!-- Add this to your fixed-nav-content -->
+            <div class="cityscape-toggle">
+                <input type="checkbox" id="darkModeToggle" class="toggle-input">
+                <label for="darkModeToggle" class="toggle-cityscape">
+                    <!-- Sky background -->
+                    <div class="sky"></div>
+
+                    <!-- Sun and Moon -->
+                    <div class="sun-moon">
+                        <div class="sun"></div>
+                        <div class="moon">
+                            <div class="crater"></div>
+                            <div class="crater"></div>
+                            <div class="crater"></div>
+                        </div>
+                    </div>
+
+                    <!-- Stars -->
+                    <div class="stars">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
+
+                    <!-- Clouds -->
+                    <div class="clouds">
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                    </div>
+
+                    <!-- City silhouette -->
+                    <div class="city">
+                        <div class="building b1">
+                            <div class="window"></div>
+                            <div class="window"></div>
+                        </div>
+                        <div class="building b2">
+                            <div class="window"></div>
+                            <div class="window"></div>
+                            <div class="window"></div>
+                        </div>
+                        <div class="building b3">
+                            <div class="window"></div>
+                            <div class="window"></div>
+                        </div>
+                        <div class="building b4">
+                            <div class="window"></div>
+                            <div class="window"></div>
+                            <div class="window"></div>
+                        </div>
+                        <div class="building b5">
+                            <div class="window"></div>
+                            <div class="window"></div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-half loader-top"></div>
+        <div class="loader-text">Hey There</div>
+        <div class="loader-half loader-bottom"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="#" style="--index: 1;">Home</a></li>
+                <li><a href="#about" style="--index: 2;">About</a></li>
+                <li><a href="#work" style="--index: 3;">Work</a></li>
+                <li><a href="#contact" style="--index: 4;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section  id="home" class="hero">
+        <div class="hero-shapes"></div>
+
+        <div class="hero-content">
+            <!-- Text Column -->
+            <div class="hero-text">
+                <p class="hero-intro">I'm</p>
+                <h1 class="hero-name"><span class="hero-name-inner">Nabahat Shah</span></h1>
+                <p class="hero-title">
+                    I create <span>memorable digital experiences</span> through design and development.
+                </p>
+                <div class="cta-container">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+            </div>
+
+            <!-- Animated Guy Column -->
+            <div class="hero-visual absolute-guy">
+                <div class="hero-visual">
+                    <!-- Light Mode Animation -->
+                    <dotlottie-player class="animation-light"
+                        src="https://lottie.host/2acb8b76-aa8e-4355-93fb-d61a34f0b452/kbRChOZWBe.lottie" loop autoplay
+                        style="width: 600%; max-width: 700px;">
+                    </dotlottie-player>
+
+                    <!-- Dark Mode Animation -->
+                    <dotlottie-player class="animation-dark"
+                        src="https://lottie.host/330871ce-c49f-4e36-b057-26c8515983f8/RgVK3LL1uf.lottie" loop autoplay
+                        style="width: 600%; max-width: 700px;">
+                    </dotlottie-player>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <p class="scroll-text">Scroll Down</p>
+                <div class="scroll-icon"></div>
+            </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know a bit about who I am and what I do</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Though I don't have a formal degree, I’ve gained over 5 years of hands-on experience working on real projects that required creativity, consistency, and practical problem-solving.</p>
+
+<p>My strengths lie in designing intuitive user interfaces and building responsive, accessible websites using <strong>HTML</strong>, <strong>CSS</strong>, and modern UI/UX principles. I pay close attention to detail and love crafting clean, user-friendly layouts that work beautifully across all devices.</p>
+
+<p>I'm actively expanding my skills in <strong>JavaScript</strong> to strengthen my frontend development toolkit. Every project helps me learn and grow — and I'm proud of how far I've come through self-motivation and real-world work.</p>
+
+<p>Currently based in <strong>Mirpurkhas</strong>, I’m open to freelance projects, collaborative work, or full-time opportunities where I can create meaningful digital experiences.</p>
+
+<div class="skills">
+    <span class="skill-tag">HTML</span>
+    <span class="skill-tag">CSS</span>
+    <span class="skill-tag">UI/UX Design</span>
+    <span class="skill-tag">Responsive Layouts</span>
+    <span class="skill-tag">Frontend Development</span>
+    <span class="skill-tag">JavaScript (Learning)</span>
+</div>
+
+            </div>
+            <div class="about-visual">
+                <div class="about-cards">
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">Designer</h3>
+                        <p class="card-text">I value simple, clean design patterns and thoughtful interactions.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💻</div>
+                        <h3 class="card-title">Developer</h3>
+                        <p class="card-text">I enjoy bringing ideas to life in the browser with clean code.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💡</div>
+                        <h3 class="card-title">Problem Solver</h3>
+                        <p class="card-text">I love tackling complex challenges with creative solutions.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🚀</div>
+                        <h3 class="card-title">Continuous Learner</h3>
+                        <p class="card-text">I'm always exploring new technologies and techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="section-header">
+            <h2 class="section-title">My Work</h2>
+            <p class="section-subtitle">A selection of my recent projects and collaborations</p>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-item" data-category="Web Design">
+                <div class="project-image">
+                    <img src="Screenshot 2025-08-07 024208.png"
+                        alt="E-commerce Platform">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <span class="project-category">Web Design</span>
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">A sleek online shopping experience with intuitive navigation and
+                            seamless checkout process.</p>
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="Mobile App">
+                <div class="project-image">
+                    <img src="Screenshot 2025-08-07 024028.png"
+                        alt="Finance Dashboard">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <span class="project-category">Mobile App</span>
+                        <h3 class="project-title">Finance Dashboard</h3>
+                        <p class="project-description">A comprehensive financial tracking app with data visualization
+                            and insights.</p>
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item" data-category="Branding">
+                <div class="project-image">
+                    <img src="Screenshot 2025-08-07 024420.png"
+                        alt="Sustainable Fashion">
+                </div>
+                <div class="project-overlay">
+                    <div class="project-details">
+                        <span class="project-category">Branding</span>
+                        <h3 class="project-title">Sustainable Fashion</h3>
+                        <p class="project-description">Complete brand identity for an eco-conscious clothing company.
+                        </p>
+                        <a href="#" class="project-link">
+                            <span>View Project</span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="view-all">
+            <a href="#" class="btn">
+                <span>View All Projects</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 0L8.59 1.41L14.17 7H0V9H14.17L8.59 14.59L10 16L20 8L10 0Z" fill="currentColor" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Interested in working together? Let's talk about your project.</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="contact-heading">Let's create something amazing together.</h3>
+                <p class="contact-text">I'm currently available for freelance projects, full-time positions, or just a
+                    friendly chat about design and development.</p>
+                <div class="contact-links">
+                    <a href="mailto:hello@alexnova.com" class="contact-link">
+                        <div class="contact-link-icon">✉️</div>
+                        <span class="contact-link-text">nabahatshah@gmail.com</span>
+                    </a>
+                    <a href="tel:+12345678901" class="contact-link">
+                        <div class="contact-link-icon">📱</div>
+                        <span class="contact-link-text">+92 3113117078</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <div class="contact-link-icon">📍</div>
+                        <span class="contact-link-text">Mirpurkhas , Pakistan</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">&lt;Create/&gt;</div>
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Nabahat Shah. All rights reserved.</p>
+                <p class="credits">Designed & Built by <a href="#">Nabahat Shah</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+   
+        
+    <!-- JavaScript for responsive interactions -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const body = document.body;
+          const darkToggle = document.getElementById('darkModeToggle');
+          const fixedNavContent = document.querySelector('.fixed-nav-content');
+          const navLinks = document.querySelector('.fixed-nav-links');
+          let mobileToggle = null;
+      
+          // ✅ Dark mode toggle logic
+          if (localStorage.getItem('darkMode') === 'true') {
+            body.classList.add('dark-mode');
+            darkToggle.checked = true;
+          }
+      
+          darkToggle.addEventListener('change', function () {
+            body.classList.toggle('dark-mode', this.checked);
+            localStorage.setItem('darkMode', this.checked);
+          });
+      
+       // ✅ Mobile toggle creation
+if (fixedNavContent && navLinks) {
+  // Create the toggle button only once
+  mobileToggle = document.createElement('div');
+  mobileToggle.className = 'fixed-nav-mobile-toggle';
+  mobileToggle.setAttribute('role', 'button');
+  mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
+  mobileToggle.setAttribute('aria-expanded', 'false');
+  mobileToggle.innerHTML = `
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  `;
+  fixedNavContent.appendChild(mobileToggle);
+
+  // ✅ Toggle mobile menu and apply styles
+  mobileToggle.addEventListener('click', function () {
+    const isOpen = this.classList.toggle('open');
+    navLinks.classList.toggle('active');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+    this.setAttribute('aria-expanded', isOpen);
+  });
+}
+
+      
+          // ✅ Close mobile menu on nav item click
+          const navItems = document.querySelectorAll('.fixed-nav-links a');
+          navItems.forEach(item => {
+            item.addEventListener('click', function () {
+              navLinks.classList.remove('active');
+              if (mobileToggle) {
+                mobileToggle.classList.remove('open');
+              }
+              document.body.style.overflow = '';
+            });
+          });
+      
+          // ✅ Animate on scroll using Intersection Observer
+          const animateElements = document.querySelectorAll('.about-text, .about-visual, .project');
+          if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('animated');
+                  observer.unobserve(entry.target);
+                }
+              });
+            }, { threshold: 0.2 });
+      
+            animateElements.forEach(el => observer.observe(el));
+          } else {
+            animateElements.forEach(el => el.classList.add('animated'));
+          }
+      
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    if (targetId === '#') return;
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      if (mobileToggle) mobileToggle.classList.remove('open');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+
+      const yOffset = -80; // navbar height (adjust if needed)
+      const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+});
+
+      </script>
+
+<!-- Replace your existing Lenis scripts with this code -->
+
+
+      
+</body>
+
+</html>
